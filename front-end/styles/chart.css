@@ -10,7 +10,7 @@
 .semi-donut {
   --percentage: 0;
   --fill: #FF6000;
-  width: 500px;
+  min-width: 400px;
   height: 150px;
   position: relative;
   color: #fff;
@@ -34,6 +34,7 @@
     left: 0;
     top: 0;
     box-sizing: border-box;
+    
     transform: rotate(calc(1deg * (-45 + var(--percentage) * 1.8)));
     animation: fillAnimation 1s ease-in;
   }
