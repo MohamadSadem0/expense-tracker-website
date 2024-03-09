@@ -6,9 +6,12 @@
         <title>expense tracker</title>
         <link rel="stylesheet" href="./styles/main.css">
         <link rel="stylesheet" href="./styles/utilities.css">
+        <link rel="stylesheet" href="./styles/chart.css">
 
     </head>
     <body class="bg-grey flex row ali">
+
+        <!--------------------------------------SIDE BAR-------------------------------------->
         <nav class="bg-light-grey navbar flex col align-center just-center">
             <div class="logo flex col align-center">
                 <img
@@ -28,7 +31,7 @@
                                 width="7" height="9" x="14" y="12"
                                 rx="1" /><rect width="7" height="5" x="3" y="16"
                                 rx="1" /></svg></div><div
-                        class="text-option">Dashboard</div></div>
+                        class="text-option color-white">Dashboard</div></div>
                 <div class="option flex row"><div class="icon"><svg
                             xmlns="http://www.w3.org/2000/svg" width="24"
                             height="24" viewBox="0 0 24 24" fill="none"
@@ -38,25 +41,53 @@
                                 d="M8 3 4 7l4 4" /><path d="M4 7h16" /><path
                                 d="m16 21 4-4-4-4" /><path
                                 d="M20 17H4" /></svg></div><div
-                        class="text-option">Transactions</div></div>
+                        class="text-option color-white">Transactions</div></div>
                 <div class="option"><div class="icon"></div><div
                         class="text-option"></div></div>
             </div>
         </nav>
-        <div class="left-side flex col">
+        <!--------------------------------------SECTION left side-------------------------------------->
+
+        <section class="left-side flex col">
+        <!--------------------------------------TOP-------------------------------------->
+
             <div class="top flex row">
                 <div class="left">
-                    <div class="flex row ">
-                    <div>Welcome Back,
-                        <div class="name">mohamad</div>
+                    <div
+                        class="top ft-size-38 color-orange color-white ">DASHBOARD</div>
+                    <div class="ft-size-24 color-white">Welcome Back,
+                        <span class="name ft-size-24">mohamad</span>
                     </div>
+
                 </div>
-                    <div></div>
+                <div class="right">
+                    <button class="btn bg-grey"> <div
+                            class="ft-size-24 color-white">actions</div></button>
                 </div>
-                <div class="right"></div>
             </div>
-        </div>
-        <div class="right-side flex col">3</div>
+        <!--------------------------------------MID CARD-------------------------------------->
+ 
+            <div class=" card bg-black flex col">
+                <div class="ft-size-24 text color-white">today’s outcome</div>
+                <div class="pie">
+  <div class="pie-wrapper">
+    <!-- fix style percentage using js later -->
+<div class="semi-donut margin" >
+
+</div>
+
+
+
+
+  </div>
+                </div>
+
+            </div>
+            <div class="bottom"></div>
+        </section>
+        <!--------------------------------------SECTION 2-------------------------------------->
+
+        <section class="right-side flex col">3</section>
 
     </body>
 </html>

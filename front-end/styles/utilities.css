@@ -27,7 +27,7 @@
 
 
 .bg-black {
-  background-color: black;
+  background-color: #141313;
 }
 .bg-grey {
   background-color: #6A6A6A;
@@ -38,6 +38,12 @@
 
 .bg-orange {
   background-color: FF6000;
+}
+.color-orange{
+    color: #FF6000;
+}
+.color-white{
+    color: white;
 }
 
 .flex{
@@ -65,3 +71,9 @@
 .align-center{
     align-items: center;
 }
+.btn{
+    height: 43px;
+    width: 142px;
+    border-radius: 25px;
+}
+

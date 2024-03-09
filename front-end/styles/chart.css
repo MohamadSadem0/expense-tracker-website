@@ -1,0 +1,45 @@
+
+
+.margin {
+
+  margin: 45px;
+}
+
+
+
+.semi-donut {
+  --percentage: 0;
+  --fill: #FF6000;
+  width: 500px;
+  height: 150px;
+  position: relative;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+  overflow: hidden;
+  color: var(--fill);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  box-sizing: border-box;
+  &:after {
+    content: "";
+    width: 400px;
+    height: 400px;
+    border: 50px solid;
+    border-color: rgba(255, 255, 255, 1) rgba(255, 255, 255, 1) var(--fill)
+      var(--fill);
+    position: absolute;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    box-sizing: border-box;
+    transform: rotate(calc(1deg * (-45 + var(--percentage) * 1.8)));
+    animation: fillAnimation 1s ease-in;
+  }
+}
+
+
+
+
+

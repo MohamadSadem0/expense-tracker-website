@@ -9,8 +9,8 @@
   width: 290px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 13px 14px;
 }
-.logo{
-flex-grow: 1;
+.logo {
+  flex-grow: 1;
 }
 img {
   width: 70px;
@@ -21,18 +21,49 @@ img {
   width: 700px;
   padding-top: 27px;
   padding-bottom: 27px;
+  padding-left: 20px;
+  padding-left: 40px;
 }
 .right-side {
   width: 100%;
 }
 
 .options {
-flex-grow: 2;
+  flex-grow: 2;
 }
-.options .option{
-  padding:10px
+.options .option {
+  padding: 10px;
 }
-.option .icon{
-  padding-right:10px;
-  padding-left:10px
+.option .icon {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.left-side .top .left {
+  flex-grow: 2;
+}
+.left-side .top .right {
+  flex-grow: 1;
+}
+.left-side .top .left .top {
+  padding-bottom: 10px;
+  padding-right: 20px;
+}
+.top{
+  padding-bottom: 40px;
+}
+
+
+ .card {
+  width: 100%;
+  padding-top: 20PX;
+  padding-left: 5px;
+  box-shadow: -13px 14px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 16px;
+}
+ .text{
+  padding-left: 15px;
+  color: #fff;
+}
+ .pie{
+  height: 270px;
 }
