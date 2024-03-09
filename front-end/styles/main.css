@@ -4,10 +4,16 @@
   text-decoration-style: none;
 }
 
+body{
+  display: flex;
+  flex-direction: row;
+
+}
 .navbar {
   height: 100vh;
   width: 290px;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 13px 14px;
+  box-shadow: rgba(0, 0, 0, 0.7) 0px 13px 14px;
+  border-radius: 10px;
 }
 .logo {
   flex-grow: 1;
@@ -51,13 +57,22 @@ img {
 .top{
   padding-bottom: 40px;
 }
+.btn{
+    height: 43px;
+    width: 142px;
+    border-radius: 25px;
+    border-style:none;
+    background-color: #373737;
+}
+
 
 
  .card {
   width: 100%;
   padding-top: 20PX;
   padding-left: 5px;
-  box-shadow: -13px 14px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: -13px 14px 2px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(2.5px);
   border-radius: 16px;
 }
  .text{
@@ -65,5 +80,7 @@ img {
   color: #fff;
 }
  .pie{
-  height: 270px;
+  height: 200px;
+  padding-left: 50px;
+  margin-top: -40px;
 }
