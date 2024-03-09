@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Rhodium+Libre&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Rhodium+Libre&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.text-rhodium {
+  font-family: "Rhodium Libre", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.text-roboto {
+  font-family: "Roboto";
+  font-weight: 100;
+  font-style: normal;
+}
+.ft-size-10 {
+  font-size: 10px;
+}
+.ft-size-13 {
+  font-size: 13px;
+}
+.ft-size-24 {
+  font-size: 24px;
+}
+.ft-size-38 {
+  font-size: 38px;
+}
+
+
+.bg-black {
+  background-color: black;
+}
+.bg-grey {
+  background-color: #6A6A6A;
+}
+.bg-light-grey {
+  background-color: rgb(69, 69, 69,31%);
+}
+
+.bg-orange {
+  background-color: FF6000;
+}
+
+.flex{
+    display: flex;
+}
+.col{
+    flex-direction: column;
+
+}
+.row{
+    flex-direction: row;
+}
+.just-center{
+    justify-content: center;
+
+}
+.just-start{
+    justify-content: flex-start;
+
+}
+.just-end{
+    justify-content: flex-end;
+
+}
+.align-center{
+    align-items: center;
+}

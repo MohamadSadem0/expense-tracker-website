@@ -1,0 +1,24 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration-style: none;
+}
+
+.navbar {
+  height: 100vh;
+  width: 290px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 13px 14px;
+}
+img {
+  width: 70px;
+  height: 67px;
+  padding-top: 55px;
+}
+.left-side {
+  width: 700px;
+  padding-top: 27px;
+  padding-bottom: 27px;
+}
+.right-side {
+  width: 100%;
+}
