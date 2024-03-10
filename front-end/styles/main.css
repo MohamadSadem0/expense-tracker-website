@@ -61,6 +61,7 @@ img {
   padding-bottom: 40px;
 }
 .btn {
+  padding-left: -40px;
   height: 43px;
   width: 142px;
   border-radius: 25px;
@@ -92,7 +93,6 @@ img {
   height: auto;
 }
 
-
 .gauge {
   width: 100%;
   max-width: 250px;
@@ -120,7 +120,7 @@ img {
   left: 0;
   width: inherit;
   height: 100%;
-  background: #FF6000;
+  background: #ff6000;
   transform-origin: center top;
   transform: rotate(0.25turn);
   transition: transform 0.2s ease-out;
@@ -142,14 +142,32 @@ img {
   padding-bottom: 25%;
   box-sizing: border-box;
 }
-
-#chart{
-  width:700px
+.bottom {
+  padding-top: 50px;
 }
-.right-side{
-
+.bottom .text {
 }
 
+#chart {
+  width: 700px;
+}
+.right-side {
+  width: 100%;
+  margin-top: 30px;
+  padding-left: 0px;
+  padding-right: 30px;
+}
+.card-top {
+  width: 100%;
+  height: 244px;
+   max-width: 100%;
+  padding-top: 20px;
+  padding-left: 5px;
+  box-shadow: -13px 14px 2px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(2.5px);
+  border-radius: 16px;
+
+}
 
 /* fix it later  */
 @media screen and (max-width: 168px) {
@@ -162,25 +180,19 @@ img {
     width: 100%;
     height: auto;
   }
-  .gauge__cover{
-  top: 35%;
-
+  .gauge__cover {
+    top: 35%;
   }
-.gauge__body {
-padding-left: 200px;
-height: 40px;
-}
-.card{
-  height:220px
-}
+  .gauge__body {
+    padding-left: 200px;
+    height: 40px;
+  }
+  .card {
+    height: 220px;
+  }
 
   .left-side {
     width: 100%;
     margin-right: 0;
-  }
-
-  .right-side {
-    width: 100%;
-    margin-top: 20px;
   }
 }
