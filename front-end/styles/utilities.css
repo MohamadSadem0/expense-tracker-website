@@ -71,12 +71,24 @@
 .align-center{
     align-items: center;
 }
+.grow-1{
+  flex-grow: 1;
+}
+.grow-2{
+  flex-grow: 2;
+}
+.grow-3{
+  flex-grow: 3;
+}
 
+.mg-right-30{
+  margin-right: 30px;
+}
 hr {
   border: none;
   border-top: 1px dotted #f00;
   color: #fff;
-  margin-top: 20px;
+  margin-top: 4px;
   margin-bottom: 20px;
   background-color: #fff;
   height: 2px;

@@ -103,7 +103,7 @@ img {
 
 .gauge__body {
   margin-top: 40px;
-  margin-left: 60px;
+  margin-left: 100px;
   width: 100%;
   height: 0;
   padding-bottom: 50%;
@@ -163,6 +163,7 @@ img {
    max-width: 100%;
   padding-top: 20px;
   padding-left: 5px;
+  padding-right: 20px;
   box-shadow: -13px 14px 2px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(2.5px);
   border-radius: 16px;
@@ -173,15 +174,24 @@ img {
  flex-grow: 1;
 }
 .right-side .card-top .bot{
- flex-grow: 3;
+  margin-bottom: 20px;
+  padding-left: 10px;
+ flex-grow: 0;
+ width: 100%;
+ margin-left: 0;
+ 
+}
+.right-side .card-top .bot .top{
  background-color: red;
 }
 
 /* fix it later  */
-@media screen and (max-width: 168px) {
+@media screen and (max-width: 768px) {
   body {
     flex-direction: column;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
   }
 
   .navbar {
@@ -192,15 +202,47 @@ img {
     top: 35%;
   }
   .gauge__body {
-    padding-left: 200px;
+    padding-left: 190px;
     height: 40px;
   }
+
   .card {
-    height: 220px;
+    height: 190px;
+    width: 100%;
+  margin-right: 10px;
+  }
+
+  .gauge{
+    max-width: 160px;
+  }
+  .card-top{
+    margin-left: 10px;
+    margin-right: 70px;
+  }
+  .left-side .bottom{
+    margin-left: -10px;
+  }
+
+  #chart{
+    width: auto;
+    padding-left: 3px;
+    margin-left: 3px;
   }
 
   .left-side {
     width: 100%;
     margin-right: 0;
   }
+
+  .gauge__body {
+  margin-top: 50px;
+  margin-left: 5px;
+
+  width: 100%;
+  height: 0;
+
+
+
+  overflow: hidden;
+}
 }
