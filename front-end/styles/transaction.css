@@ -105,3 +105,13 @@
     #filter.active + #filter-section {
       display: flex;
     }
+    img{
+        height: 120px;
+    }
+
+    @media screen and (max-width: 768px) {
+        #transactions {
+ 
+max-width: 90%;    }
+
+    }

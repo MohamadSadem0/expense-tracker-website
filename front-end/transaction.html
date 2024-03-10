@@ -5,14 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-        <link rel="stylesheet" href="./styles/transaction.css">
-        <link rel="stylesheet" href="./styles/utilities.css">
         <link rel="stylesheet" href="./styles/main.css">
+        <link rel="stylesheet" href="./styles/utilities.css">
+        <link rel="stylesheet" href="./styles/transaction.css">
     </head>
-    <body class="bg-grey">
 
-        <body class="flex row">
-                <nav class="bg-light-grey navbar flex col align-center just-center">
+    <body class="flex row bg-grey">
+        <nav class="bg-light-grey navbar flex col align-center just-center">
             <div class="logo flex col align-center">
                 <img
                     src="./resources/1000_F_111951189_jWS75ZV2voXzBU1eOTLUUyv9xe1YkIuJ-removebg-preview.png"
@@ -46,45 +45,45 @@
                         class="text-option"></div></div>
             </div>
         </nav>
-            <div class="container">
-                <h1>Expense Tracker</h1>
-                <form id="form">
-                    <select id="type">
-                        <option value>Select type</option>
-                        <option value="income">Income</option>
-                        <option value="expense">Expense</option>
-                    </select>
-                    <input id="amount" type="number"
-                        placeholder="Enter amount" />
-                    <select id="currency">
-                        <option value>Select currency</option>
-                    </select>
-                    <button id="submit" type="submit">Add</button>
-                </form>
-                <div id="balance">Balance: $0.00</div>
-                <div id="transactions"></div>
-                <div id="filter">
-                    <button type="button">Filter</button>
-                </div>
-                <div id="filter-section">
-                    <select id="filter-type">
-                        <option value="all">All</option>
-                        <option value="income">Income</option>
-                        <option value="expense">Expense</option>
-                    </select>
-                    <input
-                        id="filter-amount-from"
-                        type="number"
-                        placeholder="Enter amount from" />
-                    <input id="filter-amount-to" type="number"
-                        placeholder="Enter amount to" />
-                    <select id="filter-currency">
-                        <option value="all">All</option>
-                    </select>
-                    <button id="apply" type="button">Apply</button>
-                </div>
+        <div class="container">
+            <h1>Expense Tracker</h1>
+            <form id="form">
+                <select id="type">
+                    <option value>Select type</option>
+                    <option value="income">Income</option>
+                    <option value="expense">Expense</option>
+                </select>
+                <input id="amount" type="number"
+                    placeholder="Enter amount" />
+                <select id="currency">
+                    <option value>Select currency</option>
+                </select>
+                <button id="submit" type="submit">Add</button>
+            </form>
+            <div id="balance">Balance: $ 0.00</div>
+            <div id="transactions"></div>
+            <div id="filter">
+                <button type="button">Filter</button>
             </div>
+            <div id="filter-section">
+                <select id="filter-type">
+                    <option value="all">All</option>
+                    <option value="income">Income</option>
+                    <option value="expense">Expense</option>
+                </select>
+                <input
+                    id="filter-amount-from"
+                    type="number"
+                    placeholder="Enter amount from" />
+                <input id="filter-amount-to" type="number"
+                    placeholder="Enter amount to" />
+                <select id="filter-currency">
+                    <option value="all">All</option>
+                </select>
+                <button id="apply" type="button">Apply</button>
+            </div>
+        </div>
 
-            <script src="./scripts/transaction.js"></script>
-        </body>
-    </html>
+        <script src="./scripts/transaction.js"></script>
+    </body>
+</html>
