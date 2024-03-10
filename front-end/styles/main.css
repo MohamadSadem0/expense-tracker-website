@@ -169,6 +169,14 @@ img {
 
 }
 
+.right-side .card-top .top{
+ flex-grow: 1;
+}
+.right-side .card-top .bot{
+ flex-grow: 3;
+ background-color: red;
+}
+
 /* fix it later  */
 @media screen and (max-width: 168px) {
   body {

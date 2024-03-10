@@ -72,3 +72,13 @@
     align-items: center;
 }
 
+hr {
+  border: none;
+  border-top: 1px dotted #f00;
+  color: #fff;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  height: 2px;
+  width: 100%;
+}
