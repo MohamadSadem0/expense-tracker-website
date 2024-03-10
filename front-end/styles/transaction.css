@@ -1,0 +1,107 @@
+ * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 36px;
+      color: #333;
+    }
+
+    form {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    select,
+    input {
+      width: 150px;
+      height: 40px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    button {
+      width: 100px;
+      height: 40px;
+      border: none;
+      border-radius: 5px;
+      background-color: #333;
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    #balance {
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    #transactions {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .transaction {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .income {
+      background-color: #d4edda;
+      color: #155724;
+    }
+
+    .expense {
+      background-color: #f8d7da;
+      color: #721c24;
+    }
+
+    .delete {
+      border: none;
+      background-color: transparent;
+      color: #333;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    #filter {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    #filter > button {
+      width: 150px;
+    }
+
+    #filter-section {
+      display: none;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    #filter.active + #filter-section {
+      display: flex;
+    }

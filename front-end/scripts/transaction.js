@@ -17,6 +17,7 @@ let transactionsData = [];
 let balanceData = 0;
 let filterData = {};
 
+const convertUrl="https://crowded-cyan-wildebeest.cyclic.app/students/convert"
 const formatAmount = (amount) => {
   return amount.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,');
 };
@@ -25,14 +26,15 @@ const convertAmount = async (from, to, amount) => {
   if (from === to) return amount;
 
   try {
-    const response = await axios.post("https://ivory-ostrich-yoke.cyclic.app/students/convert", {
+    const response = await axios.post(convertUrl, {
       from,
       to,
       amount,
     });
+    
 
     
-    return response.data.converted;
+    return response.data;
   } catch (error) {
     console.error("Error converting amount:", error);
     throw error;
