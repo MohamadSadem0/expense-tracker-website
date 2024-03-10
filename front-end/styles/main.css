@@ -29,7 +29,7 @@ img {
   width: 700px;
   padding-top: 40px;
   margin-bottom: 27px;
-  margin-left: 20px;
+  margin-left: 30px;
 
   margin-right: 40px;
 }
@@ -78,7 +78,7 @@ img {
   border-radius: 16px;
 }
 .text {
-  padding-left: 15px;
+  margin-left: 25px;
   color: #fff;
 }
 .pie {
@@ -143,9 +143,16 @@ img {
   box-sizing: border-box;
 }
 
+#chart{
+  width:700px
+}
+.right-side{
+
+}
+
 
 /* fix it later  */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 168px) {
   body {
     flex-direction: column;
     flex-wrap: wrap;
