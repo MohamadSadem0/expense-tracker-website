@@ -7,9 +7,10 @@
         <link rel="stylesheet" href="./styles/main.css">
         <link rel="stylesheet" href="./styles/chart.css">
         <link rel="stylesheet" href="./styles/utilities.css">
+        <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 
     </head>
-    <body class="bg-grey flex row  ">
+    <body class="bg-grey flex row   ">
 
         <!--------------------------------------SIDE BAR-------------------------------------->
         <nav class="bg-light-grey navbar flex col align-center just-center">
@@ -68,25 +69,32 @@
             <!-------------------------------------- section 1 MID CARD-------------------------------------->
 
             <div class=" card bg-black flex col">
-                <div class="ft-size-24 text color-white">today’s outcome</div>
+                <div class="ft-size-24 color-white">today’s outcome</div>
                 <div class="pie">
-                    <div class="pie-wrapper">
-                        <!-- fix style percentage using js later -->
-                        <div class="semi-donut margin">
+                    <div class="gauge">
+  <div class="gauge__body">
+    <div class="gauge__fill"></div>
+    <div class="gauge__cover"></div>
+  </div>
+</div>
 
                         </div>
 
                     </div>
                 </div>
 
-        <!--------------------------------------SECTION 1 BOTTOM-------------------------------------->
+                <!--------------------------------------SECTION 1 BOTTOM-------------------------------------->
 
             </div>
-            <div class="bottom"></div>
+            <div class="bottom">
+ 
+            </div>
         </section>
         <!--------------------------------------SECTION 2-------------------------------------->
 
-        <section class="right-side flex col">3</section>
+        <section class="right-side flex col" style="height: 100vh;">3</section>
 
+
+        <script src="./scripts/main.js"></script>
     </body>
 </html>

@@ -1,36 +1,20 @@
-const Chart = new Vue({
-  el: "#chart",
-  data: () => ({
-    dataPoints: [
-      {
-        name: "Baseball",
-        value: 9,
-      },
-      {
-        name: "Football",
-        value: 11,
-      },
-      {
-        name: "Basketball",
-        value: 5,
-      },
-      {
-        name: "Soccer",
-        value: 11,
-      },
-      {
-        name: "Hockey",
-        value: 6,
-      },
-      {
-        name: "Volleyball",
-        value: 6,
-      },
-    ],
-  }),
-  computed: {
-    getMaxDataPoint() {
-      return Math.max(...this.dataPoints.map((d) => d.value));
-    },
-  },
-});
+const gaugeElement = document.querySelector(".gauge");
+
+function setGaugeValue(gauge, value) {
+  if (value < 0 || value > 1) {
+    return;
+  }
+
+  gauge.querySelector(".gauge__fill").style.transform = `rotate(${
+    1 / 2
+  }turn)`;
+
+  ///note::change it to the currency
+  gauge.querySelector(".gauge__cover").textContent = `${Math.round(
+    1 * 100
+  )}%`;
+}
+
+setGaugeValue(gaugeElement, 0.3);
+
+
